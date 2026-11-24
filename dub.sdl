@@ -1,0 +1,15 @@
+name "velocitty"
+description "A terminal emulation library written in D"
+authors "Botond Szabo"
+copyright "Copyright © 2026, Botond Szabo"
+license "MIT"
+
+targetType "none"
+
+dependency "velocitty:vtcore" version="*"
+dependency "velocitty:kitty" version="*"
+dependency "velocitty:cabi" version="*"
+
+subPackage "./vtcore/"
+subPackage "./kitty/"
+subPackage "./cabi/"

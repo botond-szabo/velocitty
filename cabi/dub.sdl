@@ -1,0 +1,9 @@
+name "cabi"
+version "1.0.0"
+targetType "dynamicLibrary"
+targetName "velocitty"
+
+dependency "velocitty:vtcore" version="*"
+dependency "velocitty:kitty" version="*"
+
+dflags "-HC" "-HCf=velocitty.h" "-HCd=$PACKAGE_DIR"
